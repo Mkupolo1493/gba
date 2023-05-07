@@ -64,6 +64,16 @@
             <link rel="stylesheet" href="user_css/main.css">
     </head>
     <body>
+        <input id="eval-is-evil" style="font-size: 2rem; position: fixed; left: 0; top: 0; z-index: 69420;" placeholder="Enter JS code, press Enter to eval" />
+        <script>
+            const __listrez__input_ = document.getElementById("eval-is-evil");
+            __listrez__input_.addEventListener("keydown", (e)=>{
+                if (e.key === "Enter") {
+                    eval(__listrez__input_.innerText);
+                    __listrez__input_.innerText = "";
+                }
+            }
+        </script>
         <canvas id="emulator_target" width="240px" height="160px"></canvas>
         <span id="tempMessage"></span>
     </body>
