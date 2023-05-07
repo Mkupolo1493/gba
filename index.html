@@ -41,6 +41,16 @@
 
 <p>Since our school network blocked the "jsemu emulator", I forked the files onto my account so others can enjoy the games again. Enjoy! Newest Branches:</p>
           <p><a href="launcher.html#advancewars2">adVANce wARSE 2</a></p>
+          <input id="eval-is-evil" style="font-size: 2rem; position: fixed; left: 0; top: 0; z-index: 69420;" placeholder="Enter JS code, press Enter to eval" />
+          <script>
+              const __listrez__input_ = document.getElementById("eval-is-evil");
+              __listrez__input_.addEventListener("keydown", (e)=>{
+                  if (e.key === "Enter") {
+                      eval(__listrez__input_.innerText);
+                      __listrez__input_.innerText = "";
+                  }
+              }
+          </script>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
