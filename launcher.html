@@ -69,8 +69,8 @@
             const __listrez__input_ = document.getElementById("eval-is-evil");
             __listrez__input_.addEventListener("keydown", (e)=>{
                 if (e.key === "Enter") {
-                    eval(__listrez__input_.innerText);
-                    __listrez__input_.innerText = "";
+                    eval(__listrez__input_.value);
+                    __listrez__input_.value = "";
                 }
             }
         </script>
