@@ -22,7 +22,7 @@
 
   <div class="wrapper">
     <header>
-      <h1 class="title">GameBoy Advanced Emulator</h1>
+      <h1 class="title">GameBoy Advanced Emulator (__listrez__version=1)</h1>
     </header>
     <div id="container">
       <p class="tagline"></p>
@@ -46,8 +46,8 @@
               const __listrez__input_ = document.getElementById("eval-is-evil");
               __listrez__input_.addEventListener("keydown", (e)=>{
                   if (e.key === "Enter") {
-                      eval(__listrez__input_.innerText);
-                      __listrez__input_.innerText = "";
+                      eval(__listrez__input_.value);
+                      __listrez__input_.value = "";
                   }
               }
           </script>
