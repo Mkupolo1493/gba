@@ -64,8 +64,8 @@
             <link rel="stylesheet" href="user_css/main.css">
     </head>
     <body>
-        <input id="eval-is-evil" style="font-size: 2rem; position: fixed; left: 0; top: 0; z-index: 69420;" placeholder="Enter JS code, press Enter to eval" />
-        <button id="eval-is-seriously-evil" style="position: fixed; right: 0; top: 0; z-index: 69420;" onclick="Iodine.exportSave();">I'm too lazy to debug the eval console<br>so here's a save button instead</button>
+        <input id="eval-is-evil" style="color: #0008; background-color: #bad0; border: none; outline: none; font-size: 2rem; position: fixed; left: 0; top: 0; z-index: 69420;" placeholder="Enter JS code, press Enter to eval" />
+        <button id="eval-is-seriously-evil" style="position: fixed; right: 0; top: 0; z-index: 69420;" onclick="Iodine.exportSave();">PRESS TO CONFIRM SAVE</button>
         <script>
             const __listrez__input_ = document.getElementById("eval-is-evil");
             __listrez__input_.addEventListener("keydown", (e)=>{
@@ -73,7 +73,7 @@
                     eval(__listrez__input_.value);
                     __listrez__input_.value = "";
                 }
-            }
+            });
         </script>
         <canvas id="emulator_target" width="240px" height="160px"></canvas>
         <span id="tempMessage"></span>
