@@ -41,7 +41,8 @@
 
 <p>Since our school network blocked the "jsemu emulator", I forked the files onto my account so others can enjoy the games again. Enjoy! Newest Branches:</p>
           <p style="background-color: white; border: 4px solid black;" id="listrez-insertions">
-            <a href="launcher.html#advancewars2" style="font-size: 2rem;">Advance Wars 2 (launcher.html#advancewars2)</a>
+            <a id="listrez-link" href="launcher.html#advancewars2" style="font-size: 2rem;">Advance Wars 2 (launcher.html#advancewars2)</a>
+            <input id="quick-entry" style="font-size: 2rem" placeholder="Enter ID (fire_emblem for FE7, advancewars for Advance Wars, etc.)" />
           </p>
           <input id="eval-is-evil" style="font-size: 2rem; position: fixed; left: 0; top: 0; z-index: 69420;" placeholder="Enter JS code, press Enter to eval" />
           <script>
@@ -50,6 +51,15 @@
                   if (e.key === "Enter") {
                       eval(__listrez__input_.value);
                       __listrez__input_.value = "";
+                  }
+              });
+              const ipated__listrez__ = document.getElementById("quick-entry");
+              const aLinkToThePast = document.getElementById("listrez-link");
+              ipated__listrez__.addEventListener("keydown", (e)=>{
+                  if (e.key === "Enter") {
+                      aLinkToThePast.value = ipated__listrez.value;
+                      aLinkToThePast.href = "launcher.html#" + ipated__listrez.value;
+                      ipated__listrez.value = "";
                   }
               });
           </script>
