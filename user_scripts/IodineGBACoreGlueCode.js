@@ -16,6 +16,9 @@
  *
  */
 var games = {
+    "firemlem":"Fire Emblem - The Binding Blade",
+    "sacstones":"Fire Emblem - The Sacred Stones",
+    
     "advancewars":"Advance Wars",
     "advancewars2":"Advance Wars 2",
     "aladdin":"Aladdin",
